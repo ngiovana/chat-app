@@ -8,12 +8,13 @@
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Server extends Thread{
     private Socket socket;
     public Server(final Socket socket) { this.socket = socket; }
-    public String clientName = "";
+    public static String clientName = "";
 
     public void run() {
         Scanner input = null;
@@ -50,6 +51,7 @@ public class Server extends Thread{
         while (true) {
             Socket client = server.accept();
             System.out.println("Cliente conectado: " + client.getInetAddress().getHostAddress());
+            writer("clients.txt", clientName + " - " + client.getInetAddress().getHostAddress() + " - " + new Date());
             new Server(client).start();
         }
     }
