@@ -24,6 +24,9 @@ public class Client {
 
         var keyboard = new Scanner(System.in);
         var input = new PrintStream(client.getOutputStream());
+
+        System.out.println("Digite seu nome:");
+
         while (keyboard.hasNextLine()) {
             input.println(keyboard.nextLine());
         }
