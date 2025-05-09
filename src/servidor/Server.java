@@ -1,4 +1,6 @@
 /*
+ GRUPO: GISELE, GIOVANA E YASMIN
+
  - Aceita múltiplos clientes
  - Guarda a lista de clientes conectados (nome + IP + output stream)
  - Deve fazer apenas o roteamento das mensagens e arquivos entre os clientes
