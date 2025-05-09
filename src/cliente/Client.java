@@ -1,4 +1,6 @@
 package cliente;/*
+                GRUPO: GISELE, GIOVANA E YASMIN
+                
                 - Se conecta ao servidor
                 - Lê comandos via terminal
                 - Envia mensagens para outro cliente
